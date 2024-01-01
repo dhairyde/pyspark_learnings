@@ -1,0 +1,42 @@
+Problem : Ek github repo hai mera and usme mere ko code laptop se code upload karna hai … using git bash command 
+Answer : 
+========
+1)	Git bash download https://git-scm.com/downloads
+2)	Us folder me chale jaa jaha se tere ko code upload karna hai github par.
+3)	Now us folder me git bash open kar.
+4)	Now agar wo folder me already .git file nahi h matalab ye kabhi upload nahi  huaa hai files.
+5)	So git init command chala.  Isse ek .git file ban jayega us folder me.
+6)	By default master branch hota hai.. Ham log branch change kar sakte hai using 
+git checkout <your_branch_name>
+
+Here changing from master to main 
+git branch --unset-upstream              
+git branch -m master main
+
+7)	Now git status kar.  Isse ye pata chlata ha kon sa file github ke repo me ha ikon sa nahi.
+8)	Git add . ( agar sare files upload karna hai toh ) else git add file1_name file2_name file3 name…
+9)	Git commit -m “your message”
+10)	Ye commit karne par username and user email puchega wo de dena.
+                  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+11)	Uske baad fir se git commit -m “your_msg” chala…   Is baar chal jayega.
+12)	Use baad ye command chala jiska matalb hai ham log kaha par file upload karna chahte hai wo batana hota hai . 
+
+git remote add origin https://github.com/dhairyde/pyspark_learnings.git
+git remote add origin <ye chij ham log repo se pata laga sakte hai.>
+ 
+13)	Uske bad git push command chala do..
+git push --set-upstream origin master
+Note : here master is our branch name.
+14)	If git push is not working we can try 
+ git push -f origin master  here master is the branch name and f  force 
+
+
+
+
+
+----------------------------
+
+1) New branch create 
+	git checkout -b <new_branch_name>
+2) 
